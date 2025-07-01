@@ -1,10 +1,31 @@
+/*=========================================================
+  File: app/globals.css
+  Author: Taemin Lee
+  Date: 2025-06-01
+
+  Description:
+  This file defines global CSS styles for the Growth Tracker app.
+  It includes Tailwind CSS, custom design tokens (colors, fonts),
+  and dark mode support using CSS variables and media queries.
+
+  Features:
+  - Imports TailwindCSS base styles
+  - Declares global CSS variables for background, foreground, fonts
+  - Supports light and dark themes via `prefers-color-scheme`
+  - Applies base body styling (background, font, text color)
+
+=========================================================*/
+
+/* Import Tailwind's base styles */
 @import "tailwindcss";
 
+/* Define global CSS variables for light mode */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Declare a custom theme using Tailwind's inline theming system */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -12,6 +33,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Dark mode overrides using media query */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,8 +41,9 @@
   }
 }
 
+/* Global body styling */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);         /* Use dynamic background color */
+  color: var(--foreground);             /* Use dynamic text color */
+  font-family: Arial, Helvetica, sans-serif; /* Fallback font */
 }
