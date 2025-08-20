@@ -1,13 +1,13 @@
 # 🌱 Growth Tracker
 
-**Growth Tracker** is a personalized self-growth platform designed to help users reflect weekly, build habits, and receive AI-generated feedback on their journey. Built with Next.js, TypeScript, and MongoDB, it combines the power of structured journaling, habit tracking, and gamification to promote personal growth.
+**Growth Tracker** is a personalized self-growth platform designed to help users reflect daily, build habits, and receive AI-generated feedback on their journey. Built with Next.js, TypeScript, and MongoDB, it combines the power of structured journaling, habit tracking, and gamification to promote personal growth.
 
 ---
 
 ## 🎯 Project Goal
 
 Create a personalized web platform to:
-- Write weekly reflections with AI-powered feedback
+- Write daily/weekly reflections with AI-powered feedback
 - Track habits and goals over time
 - Gamify self-growth through streaks, tasks, and points
 - Promote consistent reflection with smart prompts and summaries
